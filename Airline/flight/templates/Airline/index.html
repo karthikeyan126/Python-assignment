@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1>Welcome to Airlines</h1>
+    <title>my_django page</title>
+  </head>
+  <body>
+    <p1>This is the body part</p1>
+
+    <ul>
+      {% for flight in flights %}
+        <li>
+          <a href ="{%url 'flight' flight.id%}"> {{flight}} </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
